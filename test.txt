@@ -1,5 +1,4 @@
-<<<<<<< HEAD
 this is first change from local repo.
-=======
 This is first change in github
->>>>>>> 3209d0b991fdfdfc62f28bfff0e1afffd12ffff8
+
+all changes are ok
