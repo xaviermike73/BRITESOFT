@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Light Bootstrap Dashboard - Free Bootstrap 4 Admin Dashboard by Creative Tim</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="../Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/css/demo.css" rel="stylesheet"
+    <script src="../assets/js/MainJS.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+    <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar" style="color:aliceblue">
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    Sample Dashboard
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item active" onclick="DashboardClick();">
+                        <a class="nav-link">
+                            <i class="fa fa-pie-chart"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active" onclick="StudentDetailsClick();">
+                        <a class="nav-link">
+                            <i class="fa fa-graduation-cap"></i>
+                            <p>Students</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <i class="fa fa-group"></i>
+                            <p>Teachers</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <i class="fa fa-group"></i>
+                            <p>Parents</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <i class="fa fa-book"></i>
+                            <p>Library</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <i class="fa fa-calculator"></i>
+                            <p>Calculator</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <i class="fa fa-pencil-square"></i>
+                            <p>Class</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <i class="fa fa-book"></i>
+                            <p>Subject</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <i class="fa fa-calendar"></i>
+                            <p>Class Routine</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">
+                            <i class="fa fa-calendar"></i>
+                            <p>Attendance</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="d-lg-block" style="font-family:Calibri;font-weight:600">&nbsp;Find Something...</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="dropdown nav-item">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="no-icon" style="font-family:Calibri;font-weight:600">Steven Zone</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#" style="color:coral;font-weight:600">My Profile</a>
+                                    <a class="dropdown-item" href="#" style="color:coral;font-weight:600">Message</a>
+                                    <a class="dropdown-item" href="#" style="color:coral;font-weight:600">Password Change</a>
+                                    <a class="dropdown-item" href="#" style="color:coral;font-weight:600">Log Out</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="~/Assets/Img/default-avatar.png" height="40" />
+                            </li>
+                            <li class="dropdown nav-item">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                    <i class="fa fa-envelope"></i>
+                                    <span class="notification">2</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">
+                                        <content>
+                                            <p style="color:coral;font-weight:600">
+                                                Maria Zaman &nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span style="color:black"> 18.30<br /> What is the reason to buy this item?</span>
+                                            </p>
+                                        </content>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <content>
+                                            <p style="color:coral;font-weight:600">
+                                                Benny Roy &nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span style="color:black"> 10.35<br /> What is the reason to buy this item?</span>
+                                            </p>
+                                        </content>
+                                    </a>
+                                </ul>
+                            </li>
+                            <li class="dropdown nav-item">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                    <i class="fa fa-bell"></i>
+                                    <span class="notification">3</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">
+                                        <content>
+                                            <p style="color:coral;font-weight:600">
+                                                Complete Today's Task <br />
+                                                <span style="color:black"> 1 min ago </span>
+                                            </p>
+                                        </content>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <content>
+                                            <p style="color:coral;font-weight:600">
+                                                Director Meeting <br />
+                                                <span style="color:black"> 20 mins ago</span>
+                                            </p>
+                                        </content>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <content>
+                                            <p style="color:coral;font-weight:600">
+                                                Update Password <br />
+                                                <span style="color:black"> 45 mins ago</span>
+                                            </p>
+                                        </content>
+                                    </a>
+                                </ul>
+                            </li>
+                            <li class="dropdown nav-item">
+                                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                    <i class="fa fa-globe"></i>
+                                    <span class="no-icon" style="font-family:Calibri;font-weight:600">EN</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="content" id="divDashBoard">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title" style="font-family:Calibri;font-weight:600;text-align:center">Students</h4>
+                                </div>
+                                <div class="card-body " style="padding-left:50px">
+                                    <img src="~/Assets/Img/Colleagues-512.png" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 150000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title" style="font-family:Calibri;font-weight:600;text-align:center">Teachers</h4>
+                                </div>
+                                <div class="card-body " style="padding-left:50px">
+                                    <img src="~/Assets/Img/UI_Blue_3_of_3_23-512.png" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2250
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title" style="font-family:Calibri;font-weight:600;text-align:center">Other Staffs</h4>
+                                </div>
+                                <div class="card-body " style="padding-left:50px">
+                                    <img src="~/Assets/Img/UI_Blue_3_of_3_23-512.png" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5690
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title" style="font-family:Calibri;font-weight:600;text-align:center">Earnings</h4>
+                                </div>
+                                <div class="card-body " style="padding-left:50px">
+                                    <img src="~/Assets/Img/Currency.png" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $193000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title" style="font-family:Calibri;font-weight:600;text-align:center">Expenses</h4>
+                                </div>
+                                <div class="card-body " style="padding-left:50px">
+                                    <img src="~/Assets/Img/Currency.png" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $193000
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title" style="font-family:Calibri;font-weight:600;text-align:center">Event Calendar</h4>
+                                </div>
+                                <div class="card-body " style="padding-left:50px">
+                                    <img src="~/Assets/Img/Calendar.jpg" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 30
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title" style="font-family:Calibri;font-weight:600;text-align:center">Notification</h4>
+                                </div>
+                                <div class="card-body " style="padding-left:50px">
+                                    <img src="~/Assets/Img/Bell.png" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card ">
+                                <div class="card-header ">
+                                    <h4 class="card-title" style="font-family:Calibri;font-weight:600;text-align:center">Exam Listing</h4>
+                                </div>
+                                <div class="card-body " style="padding-left:50px">
+                                    <img src="~/Assets/Img/Calendar.jpg" height="50" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content" id="divStudentDetails">
+                <div class="container-fluid">
+                    <h4 class="card-title" style="font-family:Calibri;font-weight:600;text-align:center">All Students Details</h4>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="searchByroll" placeholder="Search By Roll.."> &nbsp;&nbsp;
+                            <input type="text" class="form-control" id="searchByName" placeholder="Search By Name.."> &nbsp;&nbsp;
+                            <input type="text" class="form-control" id="searchByClass" placeholder="Search By Class.."> &nbsp;&nbsp;
+                            <input type="submit" class="form-control" id="btnSearch" value="SEARCH" style="font-weight:700;background-color:darkorange" /> &nbsp;&nbsp;
+                            <input type="button" class="form-control" id="btnAddStudent" value="Add Student" style="font-weight:700;background-color:darkorange" 
+                                   data-toggle="modal" data-target="#AddStudentModal"/>
+                        </div>
+                    </form>
+                    <br />
+                    <table id="dtStudentDetails" class="table table-striped table-bordered table-sm" cellspacing="0" width="100" border="1">
+                        <thead>
+                            <tr>
+                                <th class="th-sm" style="color:darkorange;font-weight:700">
+                                    Roll
+                                </th>
+                                <th class="th-sm" style="color:darkorange;font-weight:700">
+                                    Photo
+                                </th>
+                                <th class="th-sm" style="color:darkorange;font-weight:700">
+                                    Name
+                                </th>
+                                <th class="th-sm" style="color:darkorange;font-weight:700">
+                                    Gender
+                                </th>
+                                <th class="th-sm" style="color:darkorange;font-weight:700">
+                                    Class
+                                </th>
+                                <th class="th-sm" style="color:darkorange;font-weight:700">
+                                    Section
+                                </th>
+                                <th class="th-sm" style="color:darkorange;font-weight:700">
+                                    Parents
+                                </th>
+                                <th class="th-sm" style="color:darkorange;font-weight:700">
+                                    Address
+                                </th>
+                                <th class="th-sm" style="color:darkorange;font-weight:700">
+                                    Date of Birth
+                                </th>
+                                <th class="th-sm" style="color:darkorange;font-weight:700">
+                                    Phone
+                                </th>
+                                <th class="th-sm" style="color:darkorange;font-weight:700">
+                                    Email
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="font-family:Calibri;font-size:small">
+                                <td>#001</td>
+                                <td><img src="~/Assets/Img/default-avatar.png" height="30" /></td>
+                                <td>Mark Wily</td>
+                                <td>Male</td>
+                                <td>2</td>
+                                <td>A</td>
+                                <td>Jack Sparrow</td>
+                                <td>TA-107 New York</td>
+                                <td>02/07/2001</td>
+                                <td>+123 9988568</td>
+                                <td>abc@gmail.com</td>
+                            </tr>
+                            <tr style="font-family:Calibri;font-size:small">
+                                <td>#002</td>
+                                <td><img src="~/Assets/Img/default-avatar.png" height="30" /></td>
+                                <td>Jessica Rose</td>
+                                <td>Male</td>
+                                <td>2</td>
+                                <td>A</td>
+                                <td>Jack Sparrow</td>
+                                <td>TA-107 New York</td>
+                                <td>02/07/2001</td>
+                                <td>+123 9988568</td>
+                                <td>abc@gmail.com</td>
+                            </tr>
+                            <tr style="font-family:Calibri;font-size:small">
+                                <td>#003</td>
+                                <td><img src="~/Assets/Img/default-avatar.png" height="30" /></td>
+                                <td>Mark Wily</td>
+                                <td>Male</td>
+                                <td>2</td>
+                                <td>A</td>
+                                <td>Jack Sparrow</td>
+                                <td>TA-107 New York</td>
+                                <td>02/07/2001</td>
+                                <td>+123 9988568</td>
+                                <td>abc@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="modal fade" id="AddStudentModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" style="font-family:Calibri;font-size:large;color:mediumpurple">Add Student</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label for="Fname" style="font-family:Calibri;color:hotpink">First Name</label> &nbsp;
+                                            <input type="text" style="font-family:Calibri" /> &nbsp;&nbsp;&nbsp;
+                                            <label for="Lname" style="font-family:Calibri;color:hotpink">Last Name</label> &nbsp;
+                                            <input type="text" style="font-family:Calibri" /> &nbsp;&nbsp;&nbsp;
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function DashboardClick() {
+            var div = document.getElementById("divDashBoard");
+            var Studentdiv = document.getElementById("divStudentDetails");
+            div.style.display = "block";
+            Studentdiv.style.display = "none";
+        }
+        function StudentDetailsClick() {
+            var div = document.getElementById("divDashBoard");
+            var Studentdiv = document.getElementById("divStudentDetails");
+            div.style.display = "none";
+            Studentdiv.style.display = "block";
+            $('#dtStudentDetails').DataTable();
+            $('#dtStudentDetails').DataTable({
+                "ordering": true // false to disable sorting (or any other option)
+            });
+        }
+    </script>
+</body>
+</html>
